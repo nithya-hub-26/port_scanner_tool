@@ -1,16 +1,17 @@
 import pyfiglet
+import termcolor
 import sys
 import socket
 import datetime
 
 # Starting Banner
-ascii_banner = pyfiglet.figlet_format("PORT SCANNER")
-print(ascii_banner)
+ascii_banner = pyfiglet.Figlet(font='slant')
+print(termcolor.colored(ascii_banner.renderText('port scanner'), 'green'))
 
 print("                                                                       ")
 print(" #####################################################")
 print(" #                                                   #")
-print(" #                   Port scanner tool               #")
+print(" #                 Port scanner tool                 #")
 print(" #                                                   #")
 print(" #####################################################")
 print("                                                                        ")
